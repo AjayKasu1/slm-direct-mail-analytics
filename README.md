@@ -10,7 +10,7 @@ Interactive dashboard analyzing 10k+ direct mail campaigns (Greenlight, Caraway,
 *   **🔍 Filters**: Channel (Shared Mail, Poplar, Insert), Location
 
 ### Tech Stack
-Python | Pandas | Plotly | Streamlit | Jupyter
+Python | Pandas | Plotly | Streamlit | Jupyter and googlecolab
 
 ### Run Locally
 ```bash
