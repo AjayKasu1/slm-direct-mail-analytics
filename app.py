@@ -29,7 +29,7 @@ except FileNotFoundError:
     st.error("Data file not found. Please run data_prep.py first.")
     st.stop()
 
-st.title("Share Local Media - Direct Mail Analytics")
+st.title("Share Local Media - Direct Mail Analytics (v1.1)")
 
 # Sidebar
 st.sidebar.header("Filters")
