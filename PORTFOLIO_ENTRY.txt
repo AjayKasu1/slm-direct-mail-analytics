@@ -1,0 +1,5 @@
+Direct Mail Performance Dashboard (Share Local Media)
+• Built end-to-end analytics pipeline + Streamlit dashboard analyzing 10k+ direct mail campaigns
+• Created "Gravity View" visualization: low-CPA campaigns float upward by revenue size
+• Computed CPA/ROAS/response rates across channels/markets; identified Top/Middle/Lower market tiers
+• Technologies: Python, Pandas, Plotly, Streamlit [GitHub link] [Live demo: https://slm-direct-mail-analytics-m6hxamcse92yjw6pwtnqpd.streamlit.app/]

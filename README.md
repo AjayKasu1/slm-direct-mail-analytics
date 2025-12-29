@@ -1,5 +1,5 @@
 # 🎯 SLM Direct Mail Analytics Dashboard
-[![Streamlit](https://img.shields.io/badge/Streamlit-Live-FF4B4B?style=for-the-badge&logo=streamlit)](https://share.streamlit.io)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Live-FF4B4B?style=for-the-badge&logo=streamlit)](https://slm-direct-mail-analytics-m6hxamcse92yjw6pwtnqpd.streamlit.app/)
 
 ## Built for Share Local Media Data Analyst role
 Interactive dashboard analyzing 10k+ direct mail campaigns (Greenlight, Caraway, Harry's, Instacart, Primary, Away).
