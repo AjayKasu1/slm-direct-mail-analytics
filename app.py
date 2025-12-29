@@ -86,10 +86,17 @@ with tab2:
     
     if not filtered_df.empty:
         # Gravity View: Scatter y=-cpa, size=revenue, color=channel
-        filtered_df['inv_cpa'] = -filtered_df['cpa']
+        # FIX: Shuffle and Sample to avoid overplotting (the "Wall of Green" issue)
+        plot_df = filtered_df.sample(frac=1, random_state=42).reset_index(drop=True) # Shuffle
+        if len(plot_df) > 2000:
+            plot_df = plot_df.head(2000) # Sample for performance and readability
+            st.caption(f"Showing 2,000 random samples out of {len(filtered_df):,} records for readability.")
+            
+        plot_df['inv_cpa'] = -plot_df['cpa']
         
-        fig_grav = px.scatter(filtered_df, x='audience_size_mailed', y='inv_cpa', 
+        fig_grav = px.scatter(plot_df, x='audience_size_mailed', y='inv_cpa', 
                               size='revenue', color='Channel_Used',
+                              opacity=0.6, # Transparency
                               hover_data=['Location', 'cpa', 'roas'],
                               title='Gravity View',
                               labels={'inv_cpa': 'Negative CPA (Higher is Better)', 'audience_size_mailed': 'Audience Size'})
