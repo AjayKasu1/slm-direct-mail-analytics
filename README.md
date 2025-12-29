@@ -1,36 +1,19 @@
-# Share Local Media - Direct Mail Analytics
+# 🎯 SLM Direct Mail Analytics Dashboard
+[![Streamlit](https://img.shields.io/badge/Streamlit-Live-FF4B4B?style=for-the-badge&logo=streamlit)](https://share.streamlit.io)
 
-## Project Overview
-This portfolio project simulates and analyzes direct mail marketing campaign data. It includes data enrichment, exploratory analysis via Jupyter Notebook, and an interactive Streamlit dashboard.
+## Built for Share Local Media Data Analyst role
+Interactive dashboard analyzing 10k+ direct mail campaigns (Greenlight, Caraway, Harry's, Instacart, Primary, Away).
 
-## Folder Structure
-- `Dataset/`: Contains the raw and enriched CSV files.
-- `data_prep.py`: Script to enrich raw data with simulated metrics (Revenue, CPA, ROAS).
-- `analysis.ipynb`: Jupyter Notebook for deep dive analysis and categorization.
-- `app.py`: Streamlit dashboard for interactive visualization.
+### Key Features
+*   **🪐 Gravity View**: Low-CPA campaigns float upward (size = revenue)
+*   **📊 Market Tiers**: Top/Middle/Lower markets like Primary case study
+*   **🔍 Filters**: Channel (Shared Mail, Poplar, Insert), Location
 
-## Setup
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+### Tech Stack
+Python | Pandas | Plotly | Streamlit | Jupyter
 
-2. Run Data Preparation:
-   ```bash
-   python data_prep.py
-   ```
-   This generates `Dataset/direct_mail_campaigns_enriched.csv`.
-
-3. Run the Dashboard:
-   ```bash
-   streamlit run app.py
-   ```
-
-## Features
-- **Data Enrichment**: Calculates synthetic performance metrics.
-- **Market Tiers**: Segments locations into Top, Middle, and Lower tiers based on CPA efficiency.
-- **Interactive Dashboard**:
-    - Filter by Channel and Market Tier.
-    - View KPI cards (Revenue, CPA, ROAS).
-    - Analyze charts for Channel performance and Tier efficiency.
-    - "Gravity View": A scatter plot visualizing efficiency vs scale.
+### Run Locally
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
